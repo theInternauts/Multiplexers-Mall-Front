@@ -1,0 +1,270 @@
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:300,700,400);
+html,body{
+  color: #3a220d;
+  background-color: #EAE8DC;
+  font-family: helvetica,arial,sans-serif;
+  position: relative;
+}
+
+section,article,div,aside,img,dt,dd,dl,p,ul,li {
+  /*outline: 1px solid #f00;*/
+}
+
+a {
+  color: #33838f;
+  text-decoration: none;
+  text-shadow: 1px 1px 0px #9AD8D6;
+}
+
+.container {
+  margin: 0px auto;
+  padding: 1em;
+  max-width: 650px;
+}
+
+.container>header {
+  color: #FFF;
+  background-color: #64bdcb;
+  border-radius: 10px;
+  border: 3px solid #64bdcb;
+}
+
+  .container>header h1 {
+    font-family: 'Comfortaa';
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    text-shadow: 0px 3px 5px #64bdcb;
+    background-color: #9ed5de;
+    padding: 0.75em 0px;
+    margin: 0px;
+    background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHUlEQVQIW2Ocd/XefwY0wEie4Kdfv8EGoWiHCQIATn0WZLV1eKIAAAAASUVORK5CYII=') repeat;
+  }
+
+    .container>header h1:before, .container>header h1::before, .container>header h1:after, .container>header h1::after {
+      position: relative;
+      background: rgba(0, 0, 0, 0) url(../img/dots.png);
+      content: "";
+      display: inline-block;
+      height: 34px;
+      width: 34px;
+      top: 57;
+    }
+
+    .container>header h1:before, .container>header h1::before {
+      background-position: -5px -5px;
+      left: -210px;
+    }
+
+    .container>header h1:after, .container>header h1::after {
+      background-position: -45px -5px;
+      right: -200px;
+      top: -57px;
+    }
+
+      .container>header h1 span {
+        display: block;
+        font-size: 0.7em;
+      }
+
+      .container>header h1 span:nth-child(2) {
+        font-size: 1.3em;
+        font-weight: 700;
+        margin-left: 5px
+      }
+
+  .container>header nav ul {
+    text-align: center;
+    padding: 0em;
+    margin: 0em;
+  }
+
+  .container>header nav li {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+    .container>header nav li a {
+      display: block;
+      padding: 1em 2em;
+      font-size: 0.8em;
+    }
+
+
+#main {
+  padding: 0em;
+  font-family: Garamond, Georgia, 'Times New Roman', serif;
+}
+
+  #main article{
+    padding-right: 0em;
+  }
+
+    #main article header h1 {
+      font-size: 2em;
+      margin: 1.2em 0 0.6em 0;
+    }
+
+    #main article span {
+      box-shadow: 2px 2px 7px #BBBAB5;
+      display: block;
+      padding: 1em;
+      background-color: #FFF;
+    }
+
+    #main article img {
+      width: 100%;
+      background-color: #FFF;
+
+    }
+
+    #main article p {
+      margin: 1.5em 0px;
+      font-size: 1.3em;
+      letter-spacing: 0.4px;
+    }
+
+aside {
+  background-color: #ddd9c6;
+}
+
+  aside section {
+    padding: 0.7em;
+  }
+
+    aside section header h1 {
+      text-transform: uppercase;
+      margin: 0em 0em;
+      margin-bottom: 1em;
+    }   
+
+    aside section article {
+      color: #000;
+    }   
+
+      aside section article img {
+        /* consider maing these a background image with left-padding for the text since the avatar isn't part of the content, it doens't NEED to be in the markup like it is...  Think on it, Cricks. */
+        float: left;
+        width: 40px;
+        height: 40px;
+      }   
+
+      aside section article p {
+        font-size: 1em;
+        border-radius: 5px;
+        margin-left: 55px;
+        padding: 0.7em;
+        position: relative;
+        background: #FFF;
+        border: 1px solid #000;
+        font-weight: lighter;
+        min-height: 2em;
+      }
+      aside section article p:after, aside section article p:before {
+        right: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+      }
+
+      aside section article p:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-right-color: #FFF;
+        border-width: 10px;
+        margin-top: -13px;
+      }
+      aside section article p:before {
+        border-color: rgba(0, 0, 0, 0);
+        border-right-color: #000;
+        border-width: 11px;
+        margin-top: -14px;
+      }
+
+  aside section dl {
+    display: inline-block;
+    margin: 0em;
+  }
+
+  aside section dt {
+    padding: 0.6em;
+    background-color: #FFF;
+    float: left;
+    margin: 0em 0.5em 0.5em 0em;
+  }
+
+    aside section dt a {
+      display: block;
+    }
+
+    aside section dt img {
+      width: 90px;
+      height: 90px;
+    }
+
+  aside section dd {            
+    display: none;
+    padding: 1em;
+    background-color: #FFF;
+    -webkit-margin-start: 0em;
+    -moz-margin-start: 0em;
+    margin-start: 0em;
+  }
+
+
+
+
+@media screen and (min-width: 48em) {
+  .container {
+    padding: 0px;
+  }
+
+  #main {
+    width: 61.5381%;
+    float: left;
+  }
+
+    #main article{
+      padding-right: 1.5em;
+    }
+
+      #main article p {
+        font-size: 1em;
+      }
+
+      #main article header h1 {
+        font-size: 1.7em;
+        font-weight: normal;
+      }
+
+  aside {
+    float: right;
+    width: 38.4615%;
+    margin-top: 4.9em;
+  }
+
+    aside section article p {
+      font-size: 0.8em;
+      padding: 0.5em;
+    }
+
+    aside section dt {
+      margin-right: 0em;
+    }
+
+    aside section dt:first-child {
+      margin-right: 0.5em;
+    }
+}
+
+@media screen and (max-width: 32em) {
+  .container>header h1:before, .container>header h1::before, .container>header h1:after, .container>header h1::after {
+    display: none;
+  }      
+}
